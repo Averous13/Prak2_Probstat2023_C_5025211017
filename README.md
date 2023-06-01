@@ -54,14 +54,38 @@ diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan ra
 
 * Apakah Anda setuju dengan klaim tersebut? Jelaskan.
 
-H0 :  $\mathrm{mu}$  > 25000 
-H1 : $latex\mu $   < 25000 
+$H0 :  mu > 25000$ 
+$H1 :  mu   < 25000$ 
 
-Disini saya tidak setuju dengan klaim awal karena sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer
+Setuju
 
 * Buatlah kesimpulan berdasarkan p-value yang dihasilkan!
 
 ![nomer2](nomer2.png)
+
+Pada output, dapat dilihat bahwa p-value yang dihasilkan berada di atas siginificance level 𝛼=0.05 sehingga dapat diputuskan bahwa H0 diterima. Dengan begitu, dapat disimpulkan bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahun.
+
+```
+mall <- 25000
+n <- 100
+mean_x <- 23500
+sd_x <- 3000
+
+zsum.test(mean.x = mean_x, sigma.x = sd_x, n.x = n, alternative = "greater",
+          mu = mall, conf.level = 0.95)
+```
+
+## Nomer 3
+
+Diketahui perusahaan memiliki seorang data analyst yang ingin memecahkan permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya
+didapatkanlah data berikut dari perusahaan saham tersebut. Dari data di bawah berilah keputusan serta kesimpulan yang didapatkan. Asumsikan
+nilai variancenya sama, apakah ada perbedaan pada rata-ratanya (α= 0.05)? 
+
+![table3](table3.png)
+
+* . H0 dan H1
+
+H0 : rata-rata bandung - rata-rata bali = 0
 
 
 
