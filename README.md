@@ -52,8 +52,14 @@ t.test(y, x, paired = TRUE,conf.level = 0.95)
 Diketahui bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak
 diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer
 
-* . Apakah Anda setuju dengan klaim tersebut? Jelaskan.
-H0 : $\mu $
+* Apakah Anda setuju dengan klaim tersebut? Jelaskan.
+H0 : $\mu $ > 25000 
+H1 : $\mu $ < 25000 
+Disini saya tidak setuju dengan klaim awal karena sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer
+
+* Buatlah kesimpulan berdasarkan p-value yang dihasilkan!
+
+![nomer2](nomer2.png)
 
 
 
