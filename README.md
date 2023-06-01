@@ -5,6 +5,11 @@ Praktikum modul dua probabilitas dan statistika
 | ------------- | :---------: |
 | Moh Adib Syambudi  | 5025211017 | 
 
+dependency package
+-BSDA
+-ggplot2
+-dplyr
+
 ## Nomer1
 Seorang peneliti melakukan penelitian mengenai pengaruh aktivitas 𝐴 terhadap kadar saturasi oksigen pada manusia. Peneliti tersebut mengambil sampel
 sebanyak 9 responden. Pertama, sebelum melakukan aktivitas 𝐴, peneliti mencatat kadar saturasi oksigen dari 9 responden tersebut. Kemudian, 9 responden tersebut
