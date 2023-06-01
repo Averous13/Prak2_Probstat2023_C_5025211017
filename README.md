@@ -12,3 +12,8 @@ diminta melakukan aktivitas 𝐴. Setelah 15 menit, peneliti tersebut mencatat k
 responden mengenai kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas.
 
 ![soal1](table1.png)
+
+Berdasarkan data pada tabel diatas, diketahui kadar saturasi oksigen dari responden ke-3 ketika belum melakukan aktivitas 𝐴 sebanyak 67, dan setelah
+melakukan aktivitas 𝐴 sebanyak 70.
+
+* Carilah Standar deviasi dari data selisih pasangan pengamatan tabel diatas
