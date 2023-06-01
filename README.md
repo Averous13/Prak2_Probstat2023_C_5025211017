@@ -86,8 +86,43 @@ nilai variancenya sama, apakah ada perbedaan pada rata-ratanya (α= 0.05)?
 * . H0 dan H1
 
 $H0 :m bandung - m bali = 0$
-$H0 :m bandung - m bali != 0$
+$H1 :m bandung - m bali != 0$
 
+* Hitung sampel statistik
 
+Uji hipotesis miu pada 2 populasi dengan varian tidak diketahui menggunakan uji statistik t. Sehingga sampel statistik dapat dihitung menggunakan fungsi tsum.test
 
+```
+tsum.test(mean.x = 3.64, s.x = 1.67, n.x = 20, mean.y = 2.79, s.y = 1.5, 
+          n.y = 27, alternative = "two.sided", var.equal = TRUE, conf.level = 0.95)
+```
+berdasarkan perhitungan fungsi tersebut akan menghasilkan estimasi sampel
+![gambar3b](3b.png)
+
+* Lakukan uji statistik (df =2)
+
+![gambar3c](3c.png)
+
+* Nilai Kritikal
+
+Nilai kritikal akan dapat dicari menggunakan fungsi qt dengan parameter significance level dibagi 2 yaitu 0.025 karena uji hipotesis ini bersifat two tail
+
+![gambar3d](3d.png)
+
+```
+qt(p = 0.025, df = 44, lower.tail = TRUE)
+qt(p = 0.025, df = 44, lower.tail = FALSE)
+```
+
+* Keputusan
+
+Nilai statistik uji t berada di antara dua nilai kritikal sehingga H0 diterima.
+
+* Kesimpulan
+Menerima H0 sebagai kebenaran, maka dapat disimpulkan perbedaan rerata antara kedua kota bandung dan bali
+
+## Nomer 4
+
+Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca
+pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali 
 
