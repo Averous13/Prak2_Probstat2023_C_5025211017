@@ -85,7 +85,8 @@ nilai variancenya sama, apakah ada perbedaan pada rata-ratanya (α= 0.05)?
 
 * . H0 dan H1
 
-H0 : rata-rata bandung - rata-rata bali = 0
+$H0 :m bandung - m bali = 0$
+$H0 :m bandung - m bali != 0$
 
 
 
