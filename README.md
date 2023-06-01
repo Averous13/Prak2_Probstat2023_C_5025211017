@@ -126,3 +126,34 @@ Menerima H0 sebagai kebenaran, maka dapat disimpulkan perbedaan rerata antara ke
 Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca
 pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali 
 
+* Buatlah plot sederhana untuk visualisasi data.
+Untuk membuatnya kita bisa gunakan fungsi qplot dengan parameter  x = temp, y = light dan data berasal dari read csv yang disediakan 
+
+
+* Lakukan uji ANOVA dua arah
+Sebelum melakukan uji coba kita perlu terlebih dahulu menampung nilai yang diperlukan kedalam sebuah variabel
+```
+data$Glass <- as.factor(data$Glass)
+data$Temp <- as.factor(data$Temp)
+str(data)
+
+```
+Untuk mengujinya kita bisa gunakan fungsi aov dengan parameter variabel yang kita buat sebelumnya
+```
+anova <- aov(Light~Glass*Temp, data = data)
+summary(anova)
+```
+
+
+* Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi).
+
+Untuk menyelesaikannya kita bisa gunakan library dplyr untuk menghasilkan tabel ringkasan tiap perlakuan
+
+```
+library(dplyr)
+treatment_summary <- group_by(data, Glass, Temp) %>% summarise(mean = mean(Light), sd = sd(Light)) %>% arrange(desc(mean))
+treatment_summary
+```
+
+
+
