@@ -53,6 +53,7 @@ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahu
 diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer
 
 * Apakah Anda setuju dengan klaim tersebut? Jelaskan.
+
 H0 :  $\mu $  > 25000 
 H1 : $\mu $   < 25000 
 
