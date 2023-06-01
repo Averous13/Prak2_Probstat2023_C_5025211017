@@ -43,5 +43,20 @@ qt(p = 0.025, df = 44, lower.tail = FALSE)
 
 #Nomer 4
 #a
+library(ggplot2)
 data <- read.csv("E:/penting/KUULYEAH/semester4/Probstat/modul2/GTL.csv")
-head(data,10)
+
+qplot(x = Temp, y = Light, geom = "point", data = data) + facet_grid(.~Glass, labeller = label_both)
+
+#b
+data$Glass <- as.factor(data$Glass)
+data$Temp <- as.factor(data$Temp)
+str(data)
+
+anova <- aov(Light~Glass*Temp, data = data)
+summary(anova)
+
+#c
+library(dplyr)
+treatment_summary <- group_by(data, Glass, Temp) %>% summarise(mean = mean(Light), sd = sd(Light)) %>% arrange(desc(mean))
+treatment_summary
