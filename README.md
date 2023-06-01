@@ -54,7 +54,7 @@ diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan ra
 
 * Apakah Anda setuju dengan klaim tersebut? Jelaskan.
 
-H0 :  $latex\mu $  > 25000 
+H0 :  $\mathrm{mu}$  > 25000 
 H1 : $latex\mu $   < 25000 
 
 Disini saya tidak setuju dengan klaim awal karena sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer
